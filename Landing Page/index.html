@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">what's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington.
+                 It was founded in 1971, and is currently the world's largest coffeehouse chain.The rise of the second wave of coffee culture is generally 
+                 attributed to Starbucks, which introduced a wider variety of coffee experiences. Starbucks serves hot and cold drinks, whole-bean coffee, 
+                 micro-ground instant coffee, espresso, caffe latte, full and loose-leaf teas, juices, Frappuccino beverages, pastries, and snacks.</p>
+                 <a href="Learn More"></a>
+            </div>
+        </div>
+        <div class="imgBOX">
+            <img src="img1.png" class="starbucks">
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3(1).png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"> </a></li>
+            <li><a href="#"><img src="twitter.png"> </a></li>
+            <li><a href="#"><img src="instagram (2).png"> </a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+   
+</body>
+</html>
